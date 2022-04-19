@@ -1,0 +1,190 @@
+@import 'variable';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Poppins:wght@500&display=swap');
+@import'_header.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+}
+.main-background{
+    height: 95vh;
+    background-image: url("/Tło.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.background{
+    // height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text{
+    font: 2rem  'Poppins', sans-serif;
+}
+input, select{
+    height: 52px;
+    width: 328px;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid #C9C9C9;
+    outline: none;
+    margin: 0 auto;
+    background:#fffbfb;
+    cursor: pointer;
+
+    &::placeholder{
+    color:#4A4A4A;
+
+    }
+}
+
+.search-box {
+    padding: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    background:white;
+    border-radius: 4px;
+    &__form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 1.5rem;
+        margin: 1.5rem;
+    }
+}
+
+.search-button{
+    grid-column: 1 / span 2;
+    background: $primary-color;
+    color: $white-color;
+    font: 20px  $primary-font;
+    cursor: pointer;
+    border-radius: 16px;
+    border:none;
+}
+
+//CSSy od formularza do logowania
+.main-login-background{
+    height: 95vh;
+    margin: 0 auto;
+    background:#E5E5E5;
+    @include flexCenter(column);
+}
+.form-box {
+    // background: #fff;
+    // border-radius: 4rem;
+    margin: 0 0 0 0;
+}
+
+.login-form-box{
+    padding: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #fff;
+    h1{
+        font-family: $primary-font;
+    }
+        
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        margin: 1.5rem;
+    }
+}
+
+.button{
+    &__log-in{
+        @include button();
+        background:$primary-color;
+        color: #fff;
+    }
+
+    &__register{
+        @include button();
+        color: $primary-color;
+    }
+}
+//akjshdkaljhdf
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+//sdfsfsgdh
+
+
+.plane-form-box{
+    padding: 1.5rem;
+    display: inline-block;
+    // text-align: center;
+    border-radius: 1rem;
+    background-color: #fff;
+    h1{
+        font-family: $primary-font;
+    }
+    &__grid {
+        display: flex;
+        justify-content: center;
+        // grid-template-columns: repeat(1, 1fr);
+        // grid-gap: 1rem;
+        margin: 1.5rem;
+    }
+}
+.bag{
+    margin: 1.5rem;
+    padding:1.5rem;
+    border-radius:10px;
+    background-color:#bdbdbd;
+    cursor: pointer;
+}
+.plane-box {
+    // margin: 1.5rem;
+    padding: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    background:white;
+    border-radius: 4px;
+    &__form{
+        padding: 1.5rem;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+object{
+    transform: rotate(0deg);
+}

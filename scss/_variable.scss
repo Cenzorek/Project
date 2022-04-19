@@ -1,0 +1,17 @@
+$primary-color:#DA0B7B;
+$primary-font:'Nunito', sans-serif;
+$white-color: #FFFFFF;
+
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+@mixin button(){
+    cursor: pointer;
+    height:3rem;
+    border-radius: 1rem;
+    border: none;
+    font: $primary-font;
+}

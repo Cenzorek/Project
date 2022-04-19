@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wyszukiwarka lotów</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <i class="fa-solid fa-plane-arrival"></i>
+            <div class="sign-in">Zaloguj się</div>
+        </nav>
+    </header>
+
+    <main class="main-background">
+        <section class="background">
+            <section class="search-box">
+                <div class="text">Gdzie chcesz lecieć?</div>
+                    <section class="search-box__form">
+                            <select class="wylot" type="text" id="wylot" name="wylot">
+                                <option value="Wrocław">Wrocław</option>
+                            </select>
+                            <select class="przylot" type="text" id="przylot" name="przylot">
+                                <option value="Paryż">Paryż</option>
+                                <option value="Nowy York">Nowy York</option>
+                                <option value="Tokio">Tokio</option>
+                            </select>
+                            <input class="date" type="date"  max="15.05.2022" id="date" name="date" >
+                            <input class="quantity" type="number" id="quantity" min="1" max="10" placeholder="ilość osób" name="quantity">
+                            <button class="search-button" id="btn">Wyszukaj loty</button>
+                            </section>
+                    </section>
+        </section>
+    </main>
+
+<script src="/js/index.js"></script>
+</body>
+</html>

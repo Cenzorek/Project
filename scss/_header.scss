@@ -1,0 +1,22 @@
+@import'_variable.scss';
+.header{
+    // height:10vh;
+    .navbar{
+        height: 5vh;
+        display: flex;
+        background: $primary-color;
+        justify-content:space-between;
+        align-items: center;
+    }
+    i{ 
+        color:$white-color;
+        cursor: pointer;
+        margin: 1rem;
+    }
+    .sign-in{
+        color:$white-color;
+        font-family: $primary-font;
+        cursor: pointer;
+        margin: 1rem;
+    }
+}

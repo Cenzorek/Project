@@ -1,0 +1,21 @@
+[
+  {
+    "from":"Wrocław",
+    "to":"Paryż",
+    "date":"",
+    "price":"201"
+  },
+  {
+    "from":"Wrocław",
+    "to":"Tokio",
+    "date":"",
+    "price":"459"
+
+  },
+  {
+    "from":"Wrocław",
+    "to":"Nowy York",
+    "date":"",
+    "price":"1289"
+  }
+]
